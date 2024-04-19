@@ -1,11 +1,15 @@
 #include <iostream>
-#include "Agenda.h"
+#include "Agena.h"
+#include "persona.h"
 
 int main() {
     int opcion;
     const int MAX_CONTACTOS = 5;
+    persona *p = new persona("juan", "alberto");
+    std::cout << p -> toString();
+}
 
-    Agenda agenda = Agenda(MAX_CONTACTOS);
+   /* Agenda agenda = Agenda(MAX_CONTACTOS);
 
     do {
         printf("\n --- MENU --- \n");
@@ -36,4 +40,4 @@ int main() {
     } while (opcion != 0);
 
     return 0;
-}
+}*/
